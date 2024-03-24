@@ -25,6 +25,8 @@ steps:
     echo See https://aka.ms/yaml
     pwd
     ls
+    cd $(Agent.BuildDirectory)
+    ls
   displayName: 'Run a multi-line script'
 - script: echo $(Agent.BuildDirectory)
     cd $(Agent.BuildDirectory)
