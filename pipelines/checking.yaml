@@ -28,6 +28,6 @@ steps:
     cd $(Agent.BuildDirectory)
     ls
   displayName: 'Run a multi-line script'
-- script: echo $(Agent.BuildDirectory)
-    cd $(Agent.BuildDirectory)
+- script: echo $(Build.Repository.LocalPath)
+    cd $(Build.Repository.LocalPath)
     ls
