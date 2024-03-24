@@ -27,3 +27,5 @@ steps:
     ls
   displayName: 'Run a multi-line script'
 - script: echo $(Agent.BuildDirectory)
+    cd $(Agent.BuildDirectory)
+    ls
